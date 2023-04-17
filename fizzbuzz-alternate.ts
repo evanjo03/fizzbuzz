@@ -4,13 +4,13 @@
  */
 function fizzBuzzAlternate(): void {
   for (let index = 0; index < 100; index++) {
-    const value = getFizzBuzzValueForNumber(index);
+    const value = getFizzBuzzNumberValue(index);
 
     console.log(value);
   }
 }
 
-function getFizzBuzzValueForNumber(num: number): string {
+function getFizzBuzzNumberValue(num: number): string {
   if (num % 3 === 0 && num % 5 === 0) {
     return "FizzBuzz";
   } else if (num % 5 == 0) {
@@ -22,4 +22,4 @@ function getFizzBuzzValueForNumber(num: number): string {
   }
 }
 
-export { fizzBuzzAlternate, getFizzBuzzValueForNumber };
+export { fizzBuzzAlternate, getFizzBuzzNumberValue };
